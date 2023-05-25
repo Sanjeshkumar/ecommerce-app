@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style> 
+    h1 {
+        text-align: center;
+    }
+    
+    .products {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        margin-top: 30px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .product {
+        text-align: center;
+    }
+    
+    .product img {
+        width: 200px;
+        height: auto;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .cart {
+        display: flex;
+        width: 400px;
+        margin: 30px auto;
+        padding: 100px;
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 80px;
+    }
+    
+    .cart h2{
+        display: flex;
+        margin-left: 10px;
+    }
+    
+    #cart-items {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    #cart-items li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    #cart-items li button {
+        padding: 5px 10px;
+        background-color: #ff0000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    #cart-items li button:hover {
+        background-color: #cc0000;
+    }
+    #cart-total {
+        text-align: right;
+        font-weight: bold;
+    }
+
+</style>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo.jpg" class="logo" alt="" height="50px" width="50px"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="shop.html">shop</a></li>
+                <li><a  href="blog.html">Blog</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li id="lg-bag"><a  class="active" href="cart.html"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a></li>
+                <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <a href="#" id="close"><i class="fa-regular fa-circle-xmark"></i></a> <!--closing the nav-->
+            </ul>
+        </div>
+        <div id="mobile">
+           <a href="cart.html"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+           <i id="bar" class="fa-sharp fa-solid fa-bars"></i>
+        </div>
+
+    </section>
+    <section id="page-header" class="about-header">
+        <h2>#Let's_Talk</h2>
+        <p>Leave a Message, We Love to hear from you!</p>
+    </section>
+<section class="carrt">
+    <h1>Shopping Cart</h1>
+    <div class="products">
+        <div class="product">
+            <img src="f4.jpg" alt="Product 1">
+            <h3>White Shirt</h3>
+            <p>999/-</p>
+            <button onclick="addToCart('White Shirt', 999)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="f5.jpg" alt="Product 2">
+            <h3>Voilet shirt </h3>
+            <p>499/-</p>
+            <button onclick="addToCart('voilet shirt', 499)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="f6.jpg" alt="Product 3">
+            <h3> Sweat shirt </h3>
+            <p>599/-</p>
+            <button onclick="addToCart(' Sweat Shirt', 599)">Add to Cart</button>
+        </div>
+            <div class="product">
+                <img src="sh2.jpg" alt="Product 1" width="200" height="200">
+                <h3>Nike Shoe</h3>
+                <p>2999/-</p>
+                <button onclick="addToCart('Nike Shoe', 2999)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="products/f3.jpg" alt="Product 2"width="200" height="200">
+                <h3>shirt </h3>
+                <p>699/-</p>
+                <button onclick="addToCart('flower shirt', 699)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="wat6.jpg" alt="Product 3" height="200" width="200">
+                <h3>Watch</h3>
+                <p>3999/-</p>
+                <button onclick="addToCart('watch', 3999)">Add to Cart</button>
+            
+        </div>
+    </div>
+    <div class="cart">
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: 0.00</p>
+    </div>
+
+</section>
+<hr>
+<hr>
+<footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="logo.jpg" alt="logo" style="height: 50px; width:50px;">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong>5th Floor,Dwaraka Heights, Jubilee Enclave, Madhapur,Hyderabad</p>
+<p><strong>Phone:</strong>+91 222 333 4444  /(+13) 01 22 333 4444</p>
+<p><strong>Hours:</strong>9:00Am - 7:00Pm,Mon - Fri</p>
+<div class="follow">
+    <h4>Follow us</h4>
+    <div class="icon">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+</div>
+</div>
+<div class="col">
+    <h4>About</h4>
+    <a href="#">About Us</a>
+    <a href="#">Delivary Information</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms & conditions</a>
+    <a href="#">Contact Us</a>
+</div>
+<div class="col">
+    <h4>My Account</h4>
+    <a href="#">Sign In </a>
+    <a href="#">View Cart</a>
+    <a href="#">My WishList</a>
+    <a href="#">Track My Order</a>
+    <a href="#">Help</a>
+</div>
+<div class="col install">
+    <h4>Install App</h4>
+    <p>From App Store Or Google Play</p>
+    <div class="row">
+        <img src="pay/app.jpg" alt="">
+        <img src="pay/play.jpg" alt="">
+    </div>
+    <p>Secured Payment Gateways</p>
+    <img src="pay/pay.png" alt="">
+</div>
+
+<div class="copyright">
+    <p>@Sanjesh Sanju- HTML,CSS Ecommerce Template</p>
+</div>
+</footer>
+<script>
+  // Initialize an empty array to store cart items
+var cartItems = [];
+// Initialize the total price to 0
+var total = 0;
+
+// Function to add an item to the cart
+function addToCart(productName, price) {
+    // Check if the item already exists in the cart
+    var existingItem = cartItems.find(function(item) {
+        return item.name === productName;
+    });
+
+    if (existingItem) {
+        // If the item already exists, increment its quantity
+        existingItem.quantity++;
+    } else {
+        // If the item does not exist, create a new item object with name, price, and quantity properties
+        var item = {
+            name: productName,
+            price: price,
+            quantity: 1
+        };
+        // Add the item to the cartItems array
+        cartItems.push(item);
+    }
+
+    // Increase the total price by the item's price
+    total += price;
+    // Update the cart display
+    updateCart();
+}
+
+// Function to remove an item from the cart
+function removeFromCart(index) {
+    // Get the item at the given index from the cartItems array
+    var removedItem = cartItems[index];
+    
+    // Decrease the total price by the removed item's price multiplied by its quantity
+    total -= removedItem.price * removedItem.quantity;
+    // Remove the item from the cartItems array
+    cartItems.splice(index, 1);
+    // Update the cart display
+    updateCart();
+}
+
+// Function to update the cart display
+function updateCart() {
+    // Get the cart list element by its ID
+    var cartList = document.getElementById('cart-items');
+    // Clear the current content of the cart list
+    cartList.innerHTML = '';
+    
+    // Iterate over each item in the cartItems array
+    cartItems.forEach(function(item, index) {
+        // Create a new list item element
+        var li = document.createElement('li');
+        // Set the inner HTML of the list item with the item's name, price, quantity, and remove button
+        li.innerHTML = `
+            <span>${item.name} - ${item.price.toFixed(2)} x ${item.quantity}</span>
+            <button onclick="removeFromCart(${index})">Remove</button>
+        `;
+        // Append the list item to the cart list
+        cartList.appendChild(li);
+    });
+    
+    // Get the cart total element by its ID
+    var cartTotal = document.getElementById('cart-total');
+    // Set the text of the cart total element with the updated total price
+    cartTotal.innerText = 'Total: ' + total.toFixed(2);
+}
+
+
+</script>
+</body>
+</html>

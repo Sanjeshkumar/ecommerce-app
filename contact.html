@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo.jpg" class="logo" alt="" height="50px" width="50px"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="shop.html">shop</a></li>
+                <li><a  href="blog.html">Blog</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a></li>
+                <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                
+                <a href="#" id="close"><i class="fa-regular fa-circle-xmark"></i></a> <!--closing the nav-->
+            </ul>
+        </div>
+        <div id="mobile">
+           <a href="cart.html"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+           <i id="bar" class="fa-sharp fa-solid fa-bars"></i>
+        </div>
+    </section>
+    <section id="page-header" class="about-header">
+        <h2>#Let's_Talk</h2>
+        <p>Leave a Message, We Love to hear from you!</p>
+    </section>
+    <section id="contact-details" class="section-p1">
+ <div class="details">
+    <span>Get In Touch</span>
+    <h2>Visit One of agency locations or Contact Us Today! </h2>
+    <h3>Head Office</h3>
+    <div>
+        <li>
+            <i class="fa-solid fa-map"></i>
+            <p>Jubilee Enclave ,Hitex Charminar,Hyderbad</p>
+        </li>
+        <li>
+            <i class="fa-solid fa-envelope"></i>
+            <p>Sanju@gmail.com</p>
+        </li>
+        <li>
+            <i class="fa-solid fa-phone"></i>
+            <p>+91 1234567890 /+91 0987654321</p>
+        </li>
+        <li>
+            <i class="fa-regular fa-clock"></i>
+            <p>Monday-Friday 9:00Am To 7:00Pm</p>
+        </li>
+    </div>
+ </div>
+ <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.1616026434126!2d78.3778293235221!3d17.
+    451977700944482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93ded9f6f0d7%3A0xa3d91e5d00d50b63!2s
+    Cyber%20Towers!5e0!3m2!1sen!2sin!4v1683996992827!5m2!1sen!2sin" width="600" height="450" style="border:0;" 
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--search on googlre map and  what you want in that location and sahare  after embedd map copy link-->
+ </div>
+    </section>
+    <section id="form-details">
+            <form name="submit-to-google-sheet">
+            <span>Leave A Message</span>
+                <h2>We Love to hear from you</h2>
+            <input type="text" name="Name" placeholder=" Name" required>
+            <input type="email" name="E-mail" placeholder="E-mail" required>
+            <input type="text" name="Subject" placeholder="Subject" required>
+            <button type="submit" class="normal">Submit</button>
+        </form>
+        <span id="msg"></span>
+        
+        <div class="people">
+            <div>
+                <img src="people/1.png" alt="">
+                <p><span>John</span>Senior Marketing Manager 
+                    <br>Phone:+0122333 <br>Email:john@mail.com</p>
+            </div>
+            <div>
+                <img src="people/2.png" alt="">
+                <p><span>Will Smith</span>Senior Marketing Manager 
+                    <br>Phone:+0122333 <br>Email:Will@mail.com</p>
+            </div>
+            <div>
+                <img src="people/3.png" alt="">
+                <p><span>Emma Watson</span>Senior Marketing Manager 
+                    <br>Phone:+0122333 <br>Email:Emma@mail.com</p>
+            </div>
+        </div>
+        
+    </section>
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign up for Newsletters</h4>
+            <p>Get E-mail updates about our Latest Shop and <span>Special Offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email Address">
+            <button class="normal">Sign Up</button>
+        </div>
+        <script>
+            function sendNotification() {
+                var email = document.querySelector('input[type="text"]').value;
+                if (email !== "") {
+                    alert("Notification sent to: " + email);
+                } else {
+                    alert("Please enter your email address.");
+                }
+            }
+        </script>
+        </section>
+<footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="logo.jpg" alt="logo" style="height: 50px; width:50px;">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong>5th Floor,Dwaraka Heights, Jubilee Enclave, Madhapur,Hyderabad</p>
+<p><strong>Phone:</strong>+91 222 333 4444  /(+13) 01 22 333 4444</p>
+<p><strong>Hours:</strong>9:00Am - 7:00Pm,Mon - Fri</p>
+<div class="follow">
+    <h4>Follow us</h4>
+    <div class="icon">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+</div>
+</div>
+<div class="col">
+    <h4>About</h4>
+    <a href="#">About Us</a>
+    <a href="#">Delivary Information</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms & conditions</a>
+    <a href="#">Contact Us</a>
+</div>
+<div class="col">
+    <h4>My Account</h4>
+    <a href="#">Sign In </a>
+    <a href="#">View Cart</a>
+    <a href="#">My WishList</a>
+    <a href="#">Track My Order</a>
+    <a href="#">Help</a>
+</div>
+<div class="col install">
+    <h4>Install App</h4>
+    <p>From App Store Or Google Play</p>
+    <div class="row">
+        <a href="https://www.apple.com/in/app-store/"><img src="pay/app.jpg" alt=""></a>
+        <img src="pay/play.jpg" alt="">
+    </div>
+    <p>Secured Payment Gateways</p>
+    <img src="pay/pay.png" alt="">
+</div>
+
+<div class="copyright">
+    <p>@Sanjesh Sanju- HTML,CSS Ecommerce Template</p>
+</div>
+</footer>
+ <script src="script.js"></script>
+
+ <script>
+
+        // URL of the Google Apps Script that handles form submission
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxCxwlNjqO-KwLDps9g2nE12YFtiM0LPo6ER4Nc22CEsokMWnWcgJP_awDF3m2yLEz4tQ/exec';
+
+// Get the form element by its name
+const form = document.forms['submit-to-google-sheet'];
+
+// Get the element to display the message
+const msg = document.getElementById("msg");
+
+// Add a submit event listener to the form
+form.addEventListener('submit', e => {
+  e.preventDefault(); // Prevent the default form submission behavior
+
+  // Send a POST request to the Google Apps Script URL with the form data
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+        // If the request is successful, display a success message
+        msg.innerHTML = "Message sent successfully.";
+        // Clear the message after 5 seconds
+        setTimeout(function(){
+            msg.innerHTML = "";
+        }, 5000);
+        // Reset the form
+        form.reset();
+    })
+    .catch(error => console.error('Error!', error.message));
+}); 
+
+ </script>
+</body>
+</html>
